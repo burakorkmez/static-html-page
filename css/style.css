@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Navigate to top button */
+
+#myBtn {
+  display: none;
+  width: 4rem !important;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgba(197, 80, 80, 0.5);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+/* Hero Section */
+
+#hero {
+  /* height: 100vh; */
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.95)), url("https://images.unsplash.com/photo-1556058683-1a5d3972af2a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTI4fHxndWl0YXJ8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60") no-repeat center center/cover;
+}
+
+.brand {
+  color: rgb(180, 150, 150) !important;
+}
+
+.pro {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.guitar-txt {
+  margin-top: 70px !important;
+}
+
+.btn {
+  margin: 5px 20px;
+  width: 20%;
+}
+
+a {
+  text-decoration: none;
+  color: white !important;
+}
+
+nav ul li {
+  padding: 0 10px;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+nav ul li a {
+  color: black !important;
+  font-weight: 800;
+}
+nav ul li:hover {
+  transform: scale(1.05);
+  border-bottom: 0.5px solid white !important;
+}
+.navbar-toggler {
+  width: 60px !important;
+  border: 1px solid #fff !important;
+  box-shadow: none;
+  outline: none;
+}
+
+a:visited {
+  color: black;
+}
+
+.sign {
+  height: 28px;
+  position: fixed;
+  top: 60px;
+  color: black !important;
+  font-weight: 800;
+  z-index: 5555;
+}
+.example {
+  border: 20px solid black;
+  border-bottom: none;
+  border-radius: 5px;
+  border-radius: 10px;
+}
+
+.sign:hover {
+  border-bottom: 1px solid black;
+}
+
+.bg-change {
+  color: white;
+}
+
+.bg-change:hover {
+  background: rgb(255, 255, 255);
+  color: black;
+}
+
+.whats-new {
+  text-decoration: underline !important;
+}
+
+/* Experience section */
+
+#experience h4 {
+  font-weight: 700;
+}
+
+.card {
+  border: none;
+}
+.card img {
+  border-radius: 15px;
+  width: 25rem;
+  margin: 0 auto;
+  transition: 0.5s all;
+  cursor: pointer;
+}
+
+.card img:hover {
+  transform: translate(0, -10px);
+}
+
+/* Library section */
+
+#library {
+  height: 70vh;
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80") no-repeat center center/cover;
+}
+.tablatures {
+  position: absolute;
+  bottom: 0px;
+}
+
+/* Commitments section */
+
+#commitments a {
+  color: black !important;
+  display: block;
+  transition: 0.5s;
+}
+#commitments a:hover {
+  cursor: pointer;
+  color: rgb(64, 138, 113) !important;
+  transform: translate(0, -10px);
+}
+#commitments img:hover {
+  cursor: pointer;
+  color: rgb(64, 138, 113) !important;
+}
+.commitments {
+  font-weight: 700;
+}
+
+/* Footer */
+
+footer {
+  height: 45vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url("https://images.unsplash.com/photo-1534536281715-e28d76689b4d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80") no-repeat center center/cover;
+}
+
+footer a {
+  display: block;
+  color: rgb(255, 248, 248) !important;
+}
+footer a:hover {
+  text-decoration: underline;
+  color: rgb(187, 161, 161) !important;
+}
+footer a i {
+  transition: 0.5s all;
+}
+footer a i:hover {
+  transform: translate(0, -5px);
+}
+
+/* Media queries  */
+
+@media (max-width: 1200px) {
+  #library {
+    height: 90vh !important;
+  }
+}
+@media (max-width: 992px) {
+  .card img {
+    width: 20rem !important;
+    /* margin: 0 25px; */
+  }
+  .tablatures {
+    position: absolute;
+    right: 0px;
+  }
+  #library {
+    height: 100vh !important;
+  }
+  nav ul li {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  nav ul li:hover {
+    transform: none;
+    border: none !important;
+  }
+  nav ul li a:hover {
+    color: burlywood !important;
+  }
+  footer {
+    height: 100vh;
+  }
+  nav ul li a {
+    color: rgb(255, 255, 255) !important;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 768px) {
+  button {
+    width: 50% !important;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tablatures {
+    position: absolute;
+    bottom: 0px;
+    opacity: 0.6;
+  }
+}
